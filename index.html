@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<link href="/dist/output.css" rel="stylesheet">
+		<link href="/src/input.css" rel="stylesheet">
+
+		<title>WeatherApp</title>
+
+		<div class="text-5xl font-extrabold" style="text-align: center; position: fixed; top: 5px; left: 37%;">
+			<span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+			  WeatherApp
+			</span>
+		  </div>
+	</head>
+	<body>
+
+		<div class ="shadow-2xl">
+			<form id = "weatherForm" onsubmit="return false" class="search-form">
+				<input type="text" placeholder="Search" id = "input" autocomplete="off">
+				<button id = "city" onclick="getWeatherByCity()" type = "submit">Search</button>
+			</form>
+		</div>
+	 </div>
+
+
+
+	<div id = "demo" class="text"></div>
+
+	</body>
+	<script src="script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+</html>
